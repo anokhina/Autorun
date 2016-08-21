@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${packageName}.${activityClass}" 
+    android:focusable="true" 
+    android:focusableInTouchMode="true" 
+    >
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@android:drawable/ic_input_add"
+        android:text="Add" />
+
+    <EditText
+        android:id="@+id/editText_search_string"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/button1"
+        android:ems="10"
+        android:hint="@string/app_to_search" 
+        android:singleLine="true"
+	    android:scrollHorizontally="true"
+	    android:ellipsize="end"
+	    android:paddingLeft="15dp"
+        
+        >
+
+        <!-- requestFocus /-->
+    </EditText>
+
+    <ListView
+        android:id="@+id/listView_apps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/editText_search_string"
+        
+        >
+    </ListView>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button1"
+        android:layout_alignBottom="@+id/button1"
+        android:layout_alignParentRight="true"
+        android:text="@string/app_select_to_add" />
+
+</RelativeLayout>

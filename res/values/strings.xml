@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+/*
+ * Copyright 2016 Veronica Anokhina.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+ -->
+<resources>
+
+    <string name="app_name">Autorun</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="b_dn">Dn</string>
+    <string name="b_up">Up</string>
+    <string name="title_activity_select_app">Select application to run</string>
+    <string name="app_to_search">Search ...</string>
+    <string name="app_select_to_add">Select an app to add</string>
+    <string name="menu_i_preferences">Preferences</string>
+    
+    <string name="run_app_delay_title">Run app delay</string>
+    <string name="run_app_delay_dsc">Delay between application start</string>
+    
+    <string name="action_run">Run</string>
+    <string name="action_menu">Main menu</string>
+    <string name="action_clear_cache">Clear cache</string>
+    
+</resources>

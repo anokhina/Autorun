@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${packageName}.${activityClass}" >
+
+    <Button
+        android:id="@+id/b_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:text="+" />
+
+    <Button
+        android:id="@+id/b_del"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/b_add"
+        android:layout_alignBottom="@+id/b_add"
+        android:layout_toRightOf="@+id/b_add"
+        android:text="-" />
+
+    <Button
+        android:id="@+id/b_dn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/b_del"
+        android:layout_alignBottom="@+id/b_del"
+        android:layout_alignParentRight="true"
+        android:text="@string/b_dn" />
+
+    <Button
+        android:id="@+id/b_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/b_dn"
+        android:layout_alignBottom="@+id/b_dn"
+        android:layout_toLeftOf="@+id/b_dn"
+        android:text="@string/b_up" />
+
+    <ListView
+        android:id="@+id/listView_apps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+		android:drawSelectorOnTop="false"
+		android:fastScrollEnabled="true"
+		android:textSize="18sp"        
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/b_add" 
+        />
+
+</RelativeLayout>
